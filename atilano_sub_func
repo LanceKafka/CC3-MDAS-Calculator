@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+public class cal {
+    
+    //operation added by Atilano(Subtraction)
+    public double subNum(double num1, double num2) {
+        return num1 - num2;
+    }
+}
