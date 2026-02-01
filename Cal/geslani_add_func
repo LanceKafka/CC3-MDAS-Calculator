@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class cal {
+    
+    //Operation added by Geslani (Addition)
+    public double addNum(double num1, double num2) {
+        return num1 + num2;
+    }
+
+    // Operation added by Butardo (Multiplication)
+    public double multiNum(double num1, double num2) {
+        return num1 * num2;
+    }
+}
