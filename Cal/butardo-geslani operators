@@ -27,6 +27,12 @@ public class cal {
               System.out.println("3. Multiplication");
               System.out.print("Choose an Operator: ");
                 int operator = input.nextInt();
+                // Prompt for numbers (merged from atilano_input_func)
+                System.out.print("Enter your first number: ");
+                    double num1 = input.nextDouble();
+                System.out.print("Enter your second number: ");
+                    double num2 = input.nextDouble();
+
           }    
 
 
