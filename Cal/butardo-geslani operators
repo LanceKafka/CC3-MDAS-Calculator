@@ -33,7 +33,21 @@ public class cal {
                 System.out.print("Enter your second number: ");
                     double num2 = input.nextDouble();
 
+                switch (operator) {
+                    case 1:
+                        System.out.println("Sum is: "+ calc.addNum(num1, num2));
+                        break;
+                    case 2:
+                        System.out.println("Difference is: "+ calc.subNum(num1, num2));
+                        break;
+                    case 3:
+                        System.out.println("Product is: "+ calc.multiNum(num1, num2));
+                        break;
+                    default:
+                        System.out.println("Invalid choice.");
+                        input.close();
+                        break;
+                }
           }    
-
 
 }
