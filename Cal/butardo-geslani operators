@@ -16,4 +16,18 @@ public class cal {
     public double subNum(double num1, double num2) {
         return num1 - num2;
     }
+
+    public static void main(String[] args){
+        Scanner input;
+            input = new Scanner(System.in);
+        cal calc = new cal();  
+              System.out.println("Calculator Menu");
+              System.out.println("1. Addition");
+              System.out.println("2. Subtraction");
+              System.out.println("3. Multiplication");
+              System.out.print("Choose an Operator: ");
+                int operator = input.nextInt();
+          }    
+
+
 }
