@@ -1,0 +1,5 @@
+   //Input function
+    System.out.println("Enter your first number: ")
+        double num1 = input.nextDouble();
+    System.out.println("Enter your second number: ")
+        double num2 = input.nextDouble();

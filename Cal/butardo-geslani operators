@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class cal {
+    
+    //Operation added by Geslani (Addition)
+    public double addNum(double num1, double num2) {
+        return num1 + num2;
+    }
+
+    // Operation added by Butardo (Multiplication)
+    public double multiNum(double num1, double num2) {
+        return num1 * num2;
+    }
+
+    //operation added by Atilano(Subtraction)
+    public double subNum(double num1, double num2) {
+        return num1 - num2;
+    }
+
+    public static void main(String[] args){
+        Scanner input;
+            input = new Scanner(System.in);
+        cal calc = new cal();  
+              System.out.println("Calculator Menu");
+              System.out.println("1. Addition");
+              System.out.println("2. Subtraction");
+              System.out.println("3. Multiplication");
+              System.out.print("Choose an Operator: ");
+                int operator = input.nextInt();
+                // Prompt for numbers (merged from atilano_input_func)
+                System.out.print("Enter your first number: ");
+                    double num1 = input.nextDouble();
+                System.out.print("Enter your second number: ");
+                    double num2 = input.nextDouble();
+
+                switch (operator) {
+                    case 1:
+                        System.out.println("Sum is: "+ calc.addNum(num1, num2));
+                        break;
+                    case 2:
+                        System.out.println("Difference is: "+ calc.subNum(num1, num2));
+                        break;
+                    case 3:
+                        System.out.println("Product is: "+ calc.multiNum(num1, num2));
+                        break;
+                    default:
+                        System.out.println("Invalid choice.");
+                        input.close();
+                        break;
+                }
+          }    
+
+}
